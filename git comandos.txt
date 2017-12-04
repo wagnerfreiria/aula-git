@@ -24,6 +24,22 @@ git diff  // monstra o que foi alterado
 
 git diff --staged  // mostra o que foi alterado, foi adicionado, porém não foi comitado
 
+git log // mostra historico dos comando
+
+git log -p // historico com o diff, mais completo ---para sair 'q'
+
+
+gitk  // gerenciar versão 
+
+
+git log --pretty=oneline  //mostra os comits e chaves 
+
+
+git reset HEAD nomeArquivo.txt  //Retirar arquivo do commit, não enviar ele
+
+
+git checkout -- nomeArquivo  // retira tudo que foi editado de uma arquivo já comitado
+
 
 
 
