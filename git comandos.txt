@@ -1,0 +1,25 @@
+git init
+
+
+git status
+
+git nomearquivo 
+
+ou
+git add.*txt
+git add . --> todos arquivos
+
+
+git commit -a -m "Inicio de arquivos / base projeto"   // comita sem add, direto
+
+git status
+
+.gitignore
+	.gitignome
+	arquivo.txt
+
+
+
+
+
+
