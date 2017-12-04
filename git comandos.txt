@@ -20,6 +20,11 @@ git status
 
 
 
+git diff  // monstra o que foi alterado
+
+git diff --staged  // mostra o que foi alterado, foi adicionado, porém não foi comitado
+
+
 
 
 
