@@ -110,6 +110,37 @@ Quando o usuário realiza uma modificação e envia para o servidor e o outro me
 
 * git pull origin master
 
+------------GITHUB------------------
+
+- Gerar conta ssh
+
+ssh-key       // não adicionar senha
+
+- Gerará um par de senhas
+
+id_rsa
+id_rsa.pud
+
+- Copiar a senha que está dentro de id_rsa.pub
+
+- Adicionar a senha ho SSH nad GPG keys
+add SSH
+
+
+- Criar um repositorio
+
+- Clonar o repositorio copiando a chave ssh
+
+ex: git clone git@github.com:wagnerfreiria/pessoal.git <nomelocal>
+
+ - fazer o trabalho normalmente e comitar
+ 
+ enviar para o repositorio online 
+ 
+ git push origin master
+ 
+
+
 
 	
 
