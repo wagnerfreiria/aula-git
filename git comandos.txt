@@ -42,5 +42,35 @@ git checkout -- nomeArquivo  // retira tudo que foi editado de uma arquivo já c
 
 
 
+Após remover arquivos do repositório - 
+É preciso aparagar do GIT tambmém
+
+git rm nomeArquivo
+
+git status
+
+git commit - "arquivos removidos"
+
+TAG  /// adicionar versões
+
+git tag -a v1.0 -m "Versao 1.0"
+
+git tag -a v0.0 5762339bf069c59e57c7b47c4df80318b18d7d2e -m "versão 0.0 inical" // adiionar tag em omiit já realizado, através da chave
+
+git chekout v0.0.
+
+git  show // informações sobre tag
+
+
+git tag  // lista as tags
+
+git tad -d v0.0 // remover a tag
+
+git cheout master // retorna a master
+
+
+
+
+
 
 
