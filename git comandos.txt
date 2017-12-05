@@ -87,9 +87,31 @@ git checkout master // retorna a master
 
 8. git merger teste 	//// trazer do teste e jogar detro do master --> esse comando é preciso estar dentro do "master"
 
+9. git branch -d  // remove o branch
+
+10 . git branch --> lista os branch
 
 
+-------------SERVIDOR GIT ----------------------
 
+1 Compartilhar Pasta no servidor
+2 Iniciar git no servidor e executar o comando "git init --bare"
+
+3 No cliente
+	git clone file:////10.42.129.233/virtual/projeto1 ProjetoRede
+	
+4. Criar os arquivos, desenvolver normal e Comitar
+git remote ///para descobrir o nome do git server "origin" padrão
+
+5. Enviar para o Servidor os arquivos
+	git push origin master
+	
+Quando o usuário realiza uma modificação e envia para o servidor e o outro membro da equipe precisa buscar o conteúdo editado e adicionar ao seu projeto.
+
+* git pull origin master
+
+
+	
 
 
 
