@@ -71,11 +71,23 @@ git checkout master // retorna a master
 
 
 -------CRIAR AMBIENTE TESTE------------
-git branch teste
+1. git branch teste
 
-git checkout teste
+2. git checkout teste
 
-Aqui é feito as modificações e será salvo dentro do Branch "teste".
+3. Aqui é feito as modificações e será salvo dentro do Branch "teste".
+
+4. git commit -a -m "Comit no ambiente de teste"
+
+5. Pronto estamos usando teste.......
+
+6. Caso eu queira que o teste seja efetivado, vamos juntar ele no master.
+
+7. Retornar para o master  --> git checkout master
+
+8. git merger teste 	//// trazer do teste e jogar detro do master --> esse comando é preciso estar dentro do "master"
+
+
 
 
 
