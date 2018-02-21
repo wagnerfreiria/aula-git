@@ -1,0 +1,75 @@
+git init
+
+
+git status
+
+git nomearquivo 
+
+ou
+git add.*txt
+git add . --> todos arquivos
+
+
+git commit -a -m "Inicio de arquivos / base projeto"   // comita sem add, direto
+
+git status
+
+.gitignore
+	.gitignome
+	arquivo.txt
+
+
+
+
+
+------------GITHUB------------------
+
+- Gerar conta ssh
+
+ssh-key       // não adicionar senha
+
+- Gerará um par de senhas
+
+id_rsa
+id_rsa.pud
+
+- Copiar a senha que está dentro de id_rsa.pub
+
+- Adicionar a senha ho SSH nad GPG keys
+add SSH
+
+
+- Criar um repositorio
+
+- Clonar o repositorio copiando a chave ssh
+
+ex: git clone git@github.com:wagnerfreiria/pessoal.git <nomelocal>
+
+ - fazer o trabalho normalmente e comitar
+ 
+ enviar para o repositorio online 
+ 
+ git push origin master
+ 
+----------------------------------
+
+
+		
+-------------------------------------------------------------------------
+		Modificações realizadas no Notepad ++
+		
+		
+		Nem tô sabendo de branch
+-------------------------------------------------------------------------
+
+		
+
+
+
+
+
+
+
+
+
+
