@@ -1,0 +1,285 @@
+git init
+
+
+git status
+
+git nomearquivo 
+
+ou
+git add.*txt
+git add . --> todos arquivos
+
+
+git commit -a -m "Inicio de arquivos / base projeto"   // comita sem add, direto
+
+git status
+
+.gitignore
+	.gitignome
+	arquivo.txt
+
+
+
+git diff  // monstra o que foi alterado
+
+git diff --staged  // mostra o que foi alterado, foi adicionado, porém não foi comitado
+
+git log // mostra historico dos comando
+
+git log -p // historico com o diff, mais completo ---para sair 'q'
+
+
+gitk  // gerenciar versão 
+
+
+git log --pretty=oneline  //mostra os comits e chaves 
+
+
+git reset HEAD nomeArquivo.txt  //Retirar arquivo do commit, não enviar ele
+
+
+git checkout -- nomeArquivo  // retira tudo que foi editado de uma arquivo já comitado
+
+
+
+Após remover arquivos do repositório - 
+É preciso aparagar do GIT tambmém
+
+git rm nomeArquivo
+
+git status
+
+git commit - "arquivos removidos"
+
+TAG  /// adicionar versões
+
+git tag -a v1.0 -m "Versao 1.0"
+
+git tag -a v0.0 5762339bf069c59e57c7b47c4df80318b18d7d2e -m "versão 0.0 inical" // adiionar tag em omiit já realizado, através da chave
+
+git chekout v0.0.
+
+git  show // informações sobre tag
+
+
+git tag  // lista as tags
+
+git tad -d v0.0 // remover a tag
+
+git checkout master // retorna a master
+
+
+
+-------CRIAR AMBIENTE TESTE------------
+1. git branch teste
+
+2. git checkout teste
+
+3. Aqui é feito as modificações e será salvo dentro do Branch "teste".
+
+4. git commit -a -m "Comit no ambiente de teste"
+
+5. Pronto estamos usando teste.......
+
+6. Caso eu queira que o teste seja efetivado, vamos juntar ele no master.
+
+7. Retornar para o master  --> git checkout master
+
+8. git merger teste 	//// trazer do teste e jogar detro do master --> esse comando é preciso estar dentro do "master"
+
+
+8.1 git branch "novo-branch" 		// cria brabch
+8.1.1 git branch					// lista as branchs
+8.2 git checkout "novo-branch"		// muda prar branch
+
+8.2 git checkout -b "novo-branch"	// cria nova branch e já muda
+
+9. git branch -d  // remove o branch
+
+10 . git branch --> lista os branch
+
+
+-------------SERVIDOR GIT ----------------------
+
+1 Compartilhar Pasta no servidor
+
+2 Iniciar git no servidor e executar o comando "git init --bare"
+
+3 No cliente
+	git clone file:////10.42.129.233/virtual/projeto1 ProjetoRede
+	
+4. Criar os arquivos, desenvolver normal e Comitar
+
+git remote ///para descobrir o nome do git server "origin" padrão
+
+5. Enviar para o Servidor os arquivos
+	git push origin master
+	
+Quando o usuário realiza uma modificação e envia para o servidor e o outro membro da equipe precisa buscar o conteúdo editado e adicionar ao seu projeto.
+
+* git pull origin master
+
+
+
+------------GITHUB------------------
+
+- Gerar conta ssh
+
+ssh-key       // não adicionar senha
+
+- Gerará um par de senhas
+
+id_rsa
+id_rsa.pud
+
+- Copiar a senha que está dentro de id_rsa.pub
+
+- Adicionar a senha ho SSH nad GPG keys
+add SSH
+
+
+- Criar um repositorio
+
+- Clonar o repositorio copiando a chave ssh
+
+ex: git clone git@github.com:wagnerfreiria/pessoal.git <nomelocal>
+
+ - fazer o trabalho normalmente e comitar
+ 
+ enviar para o repositorio online 
+ 
+ git push origin master
+ 
+----------------------------------
+
+ERROS
+
+
+$ git push origin master
+root@10.42.128.12's password:
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 393 bytes | 393.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: error: refusing to update checked out branch: refs/heads/master
+remote: error: By default, updating the current branch in a non-bare repository
+remote: error: is denied, because it will make the index and work tree inconsistent
+remote: error: with what you pushed, and will require 'git reset --hard' to match
+remote: error: the work tree to HEAD.
+remote: error:
+remote: error: You can set 'receive.denyCurrentBranch' configuration variable to
+remote: error: 'ignore' or 'warn' in the remote repository to allow pushing into
+remote: error: its current branch; however, this is not recommended unless you
+remote: error: arranged to update its work tree to match what you pushed in some
+remote: error: other way.
+remote: error:
+remote: error: To squelch this message and still keep the default behaviour, set
+remote: error: 'receive.denyCurrentBranch' configuration variable to 'refuse'.
+To ssh://10.42.128.12/var/www/redmine/git2
+ ! [remote rejected] master -> master (branch is currently checked out)
+error: failed to push some refs to 'ssh://root@10.42.128.12/var/www/redmine/git2'
+
+
+
+git clone ssh://root@10.42.128.12/var/www/redmine/git2
+
+
+criar .gitignore no server..
+
+******************************************
+
+Commit Locaiss.....depois um push para o servidor
+
+
+Criar um Reposirório
+
+$ git init
+
+*Untracket Files: Esse arquivo não está no controle de Versão.
+*Changes to be committed: Prontos para ser Comitado
+*Comitted
+
+
+Passos Commit 1 Arquivo
+$ git add teste.php
+$ git commit -m "descricao" 
+
+
+Passos Commit Vários arquivos
+$ git add .
+
+or 
+
+********* Comittar todos os arquivos ao mesmo tempo
+			$ git commit -a -m "comindado"
+
+
+ 
+LOG
+ git log -p
+ git log --pretty=online
+ $ git log --pretty=format:"%h - %an, %ar : %s"
+
+ 
+Agora, no arquivo .gitignore, adicionem este arquivo, para que seja ignorado.
+
+.idea/
+gitignore.txt
+ 
+ ***Voltando um arquivo para versão anterior, antes de Comitar
+    $ git reset HEAD teste2.txt
+	
+	
+
+***Voltar Comit
+
+git log
+
+git checkout _____hash_____
+$ git checkout a7e09ab07b1f6622a49ebfb59fc76c77358d6caf
+
+Voltas os comitts, ultimo commit, antepenultimo..
+$ git reset HEAD~1 ou 
+$ git reset HEAD~2 ou 
+$ git reset HEAD~3       
+
+
+
+Remove o comit mas mantem os arquivos
+$ git reset HEAD~1 --soft 
+
+Arranca o comit e os arquivos desse arquivo
+$ git reset HEAD~1 --hard
+
+
+
+****** Iniciando Branch
+
+Criando Nova Branch
+$ git checkout -b funcionalidade1
+
+		Criar or arquivos.... Comitar e usá-los normalmente.
+		
+
+Volta para p brach Master
+$ git checkout master
+
+
+		
+-------------------------------------------------------------------------
+		Modificações realizadas na nova_branch
+ 			 21-02-2018 - 09:26
+-------------------------------------------------------------------------
+
+		
+
+
+
+
+
+
+
+
+
+
